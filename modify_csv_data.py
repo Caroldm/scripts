@@ -1,7 +1,10 @@
-
+################################
 ################################
 ##### Modify data ##############
 ################################
+################################
+
+
 
 import csv
 out = open ('/Users/carol/Desktop/chea_test.csv','rt', encoding='utf8') ## keept getting error iterator, should return strings, not bytes
@@ -26,12 +29,14 @@ out.close()
 
 
 
+
 ################################
 ################################
 ##### Alternative - Test1 ######
 #####     Using a DICT    ######
 ################################
 ################################
+
 
 import csv
 out = open ('/Users/carol/Desktop/cheabackground1.csv','rt', encoding='UTF-8')  
@@ -64,12 +69,14 @@ out.close()
 
 
 
+
 ################################
 ################################
 ##### Alternative - Test2 ######
 #####  string encode issue #####
 ################################
 ################################
+
 
 import csv
 out = open ('/Users/carol/Desktop/cheabackground1.csv','rt', decode='UTF-8')  # open the input file rename it out
@@ -100,8 +107,14 @@ for key in aggregate_values:
 out.close()
 
            
-
-# TEST3
+           
+           
+################################
+################################
+##### Alternative - Test3 ######
+#####   encoding errors   ######
+################################
+################################
 
 import csv
 
