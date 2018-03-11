@@ -23,7 +23,6 @@ for filename in os.listdir(path):
 # #biocLite("SRAdb")
 
 # setwd('/Users/Carol/Desktop/GSMmetadata/')
-
 # library(GEOquery) 
 # library(SRAdb) 
 
