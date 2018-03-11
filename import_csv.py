@@ -10,5 +10,13 @@ import csv
   				print(line)
   				out.write(str(line))
 
+# or #
 
+#import csv
 
+#out= open ('data.csv','rb')
+#data =  csv.reader(out)
+#data = [row for row in data]
+#out.close()
+
+#print data
