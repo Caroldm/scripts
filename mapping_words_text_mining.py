@@ -2,7 +2,7 @@
 # from textblob.classifiers import NaiveBayesClassifier
 # from textblob import TextBlob
 
-
+# Train classifier
 # train = [
 #     ('I love this sandwich.', 'pos'),
 #     ('This is an amazing place!', 'pos'),
@@ -15,6 +15,7 @@
 #     ('He is my sworn enemy!', 'neg'),
 #     ('My boss is horrible.', 'neg')
 # ]
+
 # test = [
 #     ('The beer was good.', 'pos'),
 #     ('I do not enjoy my job', 'neg'),
@@ -24,6 +25,10 @@
 #     ("I can't believe I'm doing this.", 'neg')
 # ]
 
+
+
+
+# NaiveBayesClassifier
 # cl = NaiveBayesClassifier(train)
 
 # # Classify some text
@@ -36,15 +41,20 @@
 # print(blob)
 # print(blob.classify())
 
+
 # for sentence in blob.sentences:
 #     print(sentence)
 #     print(sentence.classify())
 
+
 # # Compute accuracy
 # print("Accuracy: {0}".format(cl.accuracy(test)))
 
+
 # # Show 5 most informative features
 # cl.show_informative_features(5)
+
+
 import sys
 import csv 
 from textblob.classifiers import NaiveBayesClassifier
@@ -58,8 +68,8 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	# 	line.replace('_',' ')
 	# 	data1 = line.replace('.',' ')
 
+	
 ## ASSAY CATEGORY list
-
 	# list_wds = [
 	# ('RNASEQ','RNA-Seq'),
 	# ('rnaseq','RNA-Seq'),
@@ -85,6 +95,7 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	# ('ChIPSeq','ChIP-Seq')
 	# ]
 
+	
 	list_wds = [
 	('RNASEQ','RNA-Seq'),
 	('rnaseq','RNA-Seq'),
@@ -110,6 +121,7 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	('ChIPSeq','ChIP-Seq')
 	]
 
+	
 # CONTROLS list
 
 	# list_wds = [
@@ -199,8 +211,8 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	# ('before', 'Control')
 	# ]
 
+	
 #CONDITIONS list
-
 	# list_wds = [
 	# ('TREAT','Treated'),
 	# ('Treat','Treated'),
@@ -283,6 +295,9 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	# ('silencing','Silencing'),
 	# ('Silencing','Silencing')
 	# ]
+
+	
+	
 	
 	#cl = NaiveBayesClassifier(list_wds)
 
@@ -308,12 +323,15 @@ with open('/Users/Carol/Desktop/GSM_musmusculus.csv','rU') as input_file, open('
 	# 	# for sentence in test:
 	# 	# 	print(sentence)
 	# 	# 	print(sentence.classify())
+	
+	
 	list_wds = [
 		('-/-','Knockout'),
 		('+/-', 'Knockdown'),
 		('-/+','Knockdown')
 		]
 
+	
 ## Sample TISSUE list
 	# list_wds = [
 	# ('blood','blood'),
