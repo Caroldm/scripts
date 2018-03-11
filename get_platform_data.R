@@ -1,5 +1,6 @@
 # R code
-#Get platform data
+# Get platform data
+
 #source("https://bioconductor.org/biocLite.R")
 #biocLite("SRAdb")
 
