@@ -1,10 +1,9 @@
-# Getting platform data
-
+# R code
+#Get platform data
 #source("https://bioconductor.org/biocLite.R")
 #biocLite("SRAdb")
 
 setwd('/Users/Carol/Desktop/')
-
 library(GEOquery) 
 
 # Read in data
