@@ -2,6 +2,7 @@
 # Retirar Linhas Duplicadas 
 # Delete Duplicated Lines 
 
+
 lines_seen = set() # Guarda linhas ja vistas / Holds lines already seen 
 outfile = open('/Users/Carol/Documents/SRA_RNA-seq_GEO/search_geo_pl_py/gse_category_classifier_text_mining_out1.csv','w')
 
