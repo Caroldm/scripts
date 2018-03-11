@@ -3,8 +3,7 @@ import re
 
 path = '/Users/Carol/Desktop/GS/'
 
-
-#print os.listdir(path)
+# Print os.listdir(path)
 for filename in os.listdir(path):
 	with open(path + filename,'rU') as data:
 		data=data.readlines()
@@ -25,17 +24,16 @@ for filename in os.listdir(path):
 
 # setwd('/Users/Carol/Desktop/GSMmetadata/')
 
-
 # library(GEOquery) 
 # library(SRAdb) 
-
-
 
 
 # #gds <- getGEO("GSM1847166") 
 # #Meta(gds)
 
+
 # mylist=("GSM1686397", "GSM1686398", "GSM1686399", "GSM1686400")
+
 
 # for (i in mylist){
 #   gds <- getGEO(i)
