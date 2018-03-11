@@ -6,15 +6,11 @@ import re
 
 path = '/Users/Carol/Desktop/Work/hg_ag/hg_ag_sigs_full/'
 
-# Create folder for saving signatures
+# Create folder 
 folders = os.listdir('./')
 savefolder = 'hg_ag_sigs_full_no_headers'
 if savefolder not in folders:
     os.mkdir(savefolder)
-
-
-
-#path = '/Users/Carol/Desktop/Work/hg_ag/hg_ag_sigs_full/'
 
 
 for filename in os.listdir(path):
